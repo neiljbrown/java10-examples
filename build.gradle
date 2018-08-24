@@ -79,8 +79,9 @@ idea {
 // *********************************************************************************************************************
 
 // Custom task for running javadoc on Java classes in src/test/java
-task javadocTests(type: Javadoc) {
+task javadocTests(type: Javadoc, group: "documentation" ) {
   source = sourceSets.test.allJava
   classpath = configurations.testCompile
   options.links(project.ext.javadocLinks)
+  options.addBooleanOption('html5',true)
 }
