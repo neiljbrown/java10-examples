@@ -34,12 +34,12 @@ import static org.assertj.core.api.Assertions.assertThat;
  * except the elements are sourced from a supplied Collection, rather than supplied individual elements. These
  * properties are described in the class-level Javadoc of each enhanced (List, Map, Set) interface, under the heading
  * "Unmodifiable [List|Set|Map]". In summary, these are -
- * <br/>
+ * <br>
  * - The created Collection is unmodifiable. Any attempt to add, remove, or replace elements results in an exception.
  * Although there is nothing preventing the elements themselves from being modified if they're mutable.
- * <br/>
+ * <br>
  * - Subsequent changes made to the source Collection are _not_ reflected (copied through) to the created Collection.
- * <br/>
+ * <br>
  * - In the case of Lists only, the order of the elements in the created Collection is the same as the iteration
  * order of the source Collection. (For Set and Map, the iteration order of the created collection is undefined).
  */
