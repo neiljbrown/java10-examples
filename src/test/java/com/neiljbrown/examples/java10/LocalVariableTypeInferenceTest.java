@@ -126,15 +126,15 @@ public class LocalVariableTypeInferenceTest {
       private Vehicle(String regNumber) {
         this.regNumber = regNumber;
       }
-      String getRegNumber() {return this.regNumber;}
+      private String getRegNumber() {return this.regNumber;}
     };
     class Car extends Vehicle {
-      Car(String regNumber) {
+      private Car(String regNumber) {
         super(regNumber);
       }
     };
     class Lorry extends Vehicle {
-      Lorry(String regNumber) {
+      private Lorry(String regNumber) {
         super(regNumber);
       }
     };

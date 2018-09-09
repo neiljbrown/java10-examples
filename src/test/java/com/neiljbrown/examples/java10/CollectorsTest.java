@@ -71,5 +71,4 @@ public class CollectorsTest {
       colours.add("orange")
     ).isInstanceOf(UnsupportedOperationException.class);
   }
-
 }
