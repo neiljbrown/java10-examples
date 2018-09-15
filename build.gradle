@@ -67,10 +67,25 @@ dependencies {
 // Task configuration
 // *********************************************************************************************************************
 
+eclipse {
+  classpath {
+    downloadJavadoc = true  // defaults to 'false'
+  }
+}
+
 idea {
   project {
     jdkName = '10'
     languageLevel = '10'
+  }
+}
+
+test {
+  useJUnitPlatform() // Enable support for JUnit 5+
+
+  testLogging {
+    showStandardStreams = true // Log any output that the tests write to stdout or stderr
+    events "passed", "skipped", "failed" // Log the execution of each test and its result
   }
 }
 
