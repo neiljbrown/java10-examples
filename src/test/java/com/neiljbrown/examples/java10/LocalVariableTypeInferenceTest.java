@@ -52,8 +52,12 @@ import static org.assertj.core.api.Assertions.assertThat;
  * <a href="http://openjdk.java.net/jeps/286">JEP 286: Local-Variable Type Inference</a> - The original proposal for
  * this language enhancement. Outlines the motivation, scope and design of the feature.
  * <p>
- * <a href="https://developer.oracle.com/java/jdk-10-local-variable-type-inference">Java 10 Local Variable Type Inference, Urma and Warburton</a>
- * - A more in-depth article/discussion piece on the use of var.
+ * <a href="http://openjdk.java.net/projects/amber/LVTIstyle.html">Style Guidelines for Local Variable Type Inference
+ * in Java, Stuart W. Marks  2018-03-22</a> - Eplains some of the tradeoffs of using var, and provides guidelines,
+ * principles for its effective use, including further examples.
+ * <p>
+ * <a href="https://developer.oracle.com/java/jdk-10-local-variable-type-inference">Java 10 Local Variable Type
+ * Inference, Urma and Warburton</a> - A more in-depth article/discussion piece on the use of var.
  */
 public class LocalVariableTypeInferenceTest {
 
@@ -127,17 +131,17 @@ public class LocalVariableTypeInferenceTest {
         this.regNumber = regNumber;
       }
       private String getRegNumber() {return this.regNumber;}
-    };
+    }
     class Car extends Vehicle {
       private Car(String regNumber) {
         super(regNumber);
       }
-    };
+    }
     class Lorry extends Vehicle {
       private Lorry(String regNumber) {
         super(regNumber);
       }
-    };
+    }
 
     // When declaring the explicit type (not using var) of a variable it's possible to write polymorphic code - the
     // same object reference to a super-type (in  this case a Vehicle), can be used to refer to instance of different
