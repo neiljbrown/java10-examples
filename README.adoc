@@ -9,6 +9,9 @@ This project provides a set of Java code examples illustrating the new language 
 
 The examples are implemented as a set of easy to run tests, using JUnit (5).
 
+For a broader overview of the new features in JDK 10 that are of most interest to developers see my blog post
+https://neiljbrown.com/2018/08/11/java-10-new-features-code-examples-support/.
+
 == Source Code
 The source code for the examples can be found in the src/test/java folder.
 
@@ -54,7 +57,8 @@ The generated Javadoc can be found in the standard location for a Maven project 
 For more details of Maven build support see pom.xml in the project's root folder.
 
 == Other Examples
-You can find similar code examples for the new features introduced in earlier versions in Java, including -
+You can find similar code examples for the new features introduced in earlier versions in Java in my other code
+repos, including -
 
 * Java 9 - See https://github.com/neiljbrown/java9-examples[GitHub project neiljbrown/java9-examples]
 * Java 7 and 8 - See my https://bitbucket.org/neilbrown/[Bitbucket projects]
